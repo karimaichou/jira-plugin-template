@@ -1,0 +1,28 @@
+<atlassian-plugin key="jira-gadget-plugin-template"
+                  name="JIRA Gadget Plugin Template"
+                  pluginsVersion="2">
+    <!-- Contains plugin metadata. -->
+    <plugin-info>
+        <description>A sample plugin showing the minimal required structure to build JIRA plugins.</description>
+        <vendor name="Atlassian" url="http://www.atlassian.com"/>
+        <version>1.0</version>
+        <application-version min="4.0"/>
+    </plugin-info>
+
+    <!--
+        Registers the gadget spec as a plugin module. This allows the gadget to
+        appear in the gadget directory and also allows administrators to
+        disable/enable the gadget.
+        ex : <gadget key="your-gadget-key" name="your gqdget's name" location="gadget local location"/>
+     -->
+
+    <resource type="i18n" name="i18n/i18n" location="i18n"/>
+
+    <!--    Rest Resources
+        Automatically finds all JAX-RS resource classes in the plugin and
+        publishes them.
+       Ex :  <rest key="your-key" path="your-path" version="1.0">
+                <description>description to show</description>
+             </rest>
+     -->
+</atlassian-plugin>
